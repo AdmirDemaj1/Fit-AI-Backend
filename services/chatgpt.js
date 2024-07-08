@@ -37,6 +37,11 @@ async function generateDietPlan(data) {
   - Gender: ${gender}
   - Favorite Foods: ${favoriteFoods}
   - Disliked Foods: ${dislikedFoods}
+  Make sure to generate the plan for a month sepecifying what to consume each day.
+  Structure the response in this way:
+  Day1: Specified Food,
+  Day2: Specified Food,
+  ...
   `;
 
   console.log("Generated prompt:", prompt);

@@ -1,16 +1,22 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const cors = require('cors');
 const connectDB = require('./db');
 const authRoutes = require('./routes/authRoutes');
 const dietRoutes = require('./routes/dietRoutes');
+const cors = require('cors');
+
+
+
+
+
+
 
 require('dotenv').config();
 
 const app = express();
 
 
-
+app.use(cors());
 app.use(bodyParser.json());
 connectDB();
 // app.use(cors());
